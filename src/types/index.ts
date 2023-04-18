@@ -1,4 +1,4 @@
-export type food = {
+export type foodType = {
   id: string
   title: string
   description: string
@@ -6,7 +6,7 @@ export type food = {
   img: string
 }
 
-export type foodCart = {
+export type foodCartType = {
   productId: string
   quantity: number
 }

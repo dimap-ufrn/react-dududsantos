@@ -1,9 +1,9 @@
 import './App.css'
 import { useState } from "react";
 import { Foods } from "./components/foods"
-import { food, foodCart } from './types';
+import { foodType, foodCartType } from './types';
 
-const products: food[] = [
+const products: foodType[] = [
   {
     id: "1",
     title: "Pizza da Mãe",
@@ -37,7 +37,7 @@ export default function App() {
     endereco: "",
   });
   const [cart, setCart] =
-    useState<foodCart[]>([
+    useState<foodCartType[]>([
       {
         productId: "1",
         quantity: 1,
@@ -104,10 +104,10 @@ export default function App() {
                   key={foodCart.productId}
                   quantity={foodCart.quantity}
                   setCart={setCart}
-                  item={
+                  food={
                     products.find(
                       (product) => product.id == foodCart.productId
-                    ) as food
+                    ) as foodType
                   }
                 />
               ))}

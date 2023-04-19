@@ -126,10 +126,10 @@ export default function App() {
                   placeholder="00000-000"
                   maxLength={9}
                   onChange={e => {
-                    let value = e.target.value
-                    value = value.replace(/\D/g, '')
-                    value = value.replace(/(\d{5})(\d)/, '$1-$2')
-                    setCep(value)
+                    let val = e.target.value
+                    val = val.replace(/\D/g, '')
+                    val = val.replace(/(\d{5})(\d)/, '$1-$2')
+                    setCep(val)
                     console.log(e.target.value.length)
                     if (e.target.value.length == 9) {
                       getCep(e.target.value)

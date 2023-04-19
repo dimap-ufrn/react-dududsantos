@@ -105,5 +105,10 @@
   background-color: green;
   padding: 1rem;
   border-radius: 10px;
+  transition: ease-in-out 1s;
+}
+.sendOrder:hover{
+  transition:ease-in 0.2s;
+  background-color: rgb(45, 100, 45);
 }
 }

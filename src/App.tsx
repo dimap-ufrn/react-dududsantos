@@ -1,4 +1,4 @@
-import './App.css'
+
 import { useState } from 'react'
 import { Foods } from './components/foods'
 import { foodType, foodCartType } from './types'

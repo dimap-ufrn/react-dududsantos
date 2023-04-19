@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend:wght@500;600&family=Roboto&display=swap');
+
+button{
+  text-decoration: none;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.boxItems{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-top: solid 0.5px;
+  border-color: rgb(228, 228, 228);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-family: 'Roboto', sans-serif;
+  gap: 0.75rem;
+
+  .foodPic{
+    height: 100px;
+    width: 120px;
+    object-fit: cover;
+    //margin-right: 0.5rem;
+  }
+  .foodDetail{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem
+    //margin-left: 0.5rem;
+    //margin-right: 0.5rem;
+
+    span{
+      font-size: medium;
+      font-weight: bold;
+    }
+    small{
+      font-size: medium;
+    }
+  }
+
+  .foodActions{
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    //margin-left: 2rem;
+
+    span{
+      font-weight: bold;
+    }
+  }
+  .actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  img{
+    width: 12px;
+  }
+
+  .foodValue{
+    margin-left: 5rem;
+  }
+
+}
